@@ -2,7 +2,7 @@
 This solution will help to create s3 batch operation manifests and run multiple of jobs programmatically. This is especially useful when you want to transfer part of the bucket(a folder/prefix) to another bucket using s3 batch operations.
 ## Pre-requisites
 Make sure you already have source bucket,destination bucket and manifest bucket and report buckets in place.
-You may use the same bucket for to keep manifest and reports.
+You may use the same bucket to store manifest and reports.
 ##  1. Deploy the cloudformation template
     You have to change following parameters in cloudformation according to your needs:
         - BucketForCopySource
