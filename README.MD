@@ -4,19 +4,19 @@ This solution will help to create s3 batch operation manifests and run multiple 
 Make sure you already have source bucket,destination bucket and manifest bucket and report buckets in place.
 You may use the same bucket for to keep manifest and reports.
 ##  1. Deploy the cloudformation template
-You have to change following parameters in cloudformation according to your needs:
-    - BucketForCopySource
-    - BucketForCopyDestination
-    - BucketForManifestOrInventory
-    - BucketForBatchOpsReport
+    You have to change following parameters in cloudformation according to your needs:
+        - BucketForCopySource
+        - BucketForCopyDestination
+        - BucketForManifestOrInventory
+        - BucketForBatchOpsReport
 
-This template will create:
-    - Lambda function
-    - IAM Role for Lambda function
-    - IAM Role for S3 batch operations job
+    This template will create:
+        - Lambda function
+        - IAM Role for Lambda function
+        - IAM Role for S3 batch operations job
 
 ##  2. Update the config.ini file
-       You can the get arns of lambda function and s3 batch operations role after running step 1.
+    - You can the get arns of lambda function and s3 batch operations role after running step 1.
 ##  2. Creating the Mainfest (CSV file)
        
     - Update the Bucket and prefix pairs in bucket_prefix_list.txt file.
